@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To Do List</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <div class="body">
+    <h1>To Do List</h1>
+    <div class="created-list">
+      <input class="created-list__input-list" id="created-list__input-list" type="text" name="name"
+        placeholder="   New category of task">
+      <button class="created-list__new-list" id="created-list__new-list">Add your new category</button>
+      <select class="created-list__name" name="list_name" id="list_name">
+        <option value="option1">Work</option>
+        <option value="option2">Home</option>
+      </select>
+    </div>
+    <h2 class="dynamic-heading" id="dynamic-heading">Work</h2>
+    <div class="container-to-do">
+      <input class="container-to-do__items" type="text" name="items" placeholder="  To Do Items">
+      <button class="container-to-do__plus-btn">+</button>
+    </div>
+    <ul class="todo-list" id="todo-list"></ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
